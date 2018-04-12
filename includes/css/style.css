@@ -1,0 +1,27 @@
+@import url(https://rsms.me/inter/inter-ui.css);
+
+html{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+}
+*{box-sizing: border-box;}
+body{
+  color:#111;
+  font-family: 'Inter UI', sans-serif;
+  font-weight:400;
+  max-width:20em;
+  margin:auto;
+}
+h1,h2{display:none}
+a{
+  color:inherit;
+  text-decoration:none;
+  box-shadow:inset 0px -0.25em 0 lightblue;
+  transition:box-shadow .25s;
+}
+a:hover{
+  box-shadow:inset 0px -1em 0 lightgreen;
+}
+a:visited {
+  background-color:lightslategrey;
+}
