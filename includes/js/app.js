@@ -1,7 +1,7 @@
 /* global XMLHttpRequest:true */
 
 const RSS_URL =
-  'https://cors.io/?https://feeds.pinboard.in/json/u:mahnouel/t:mahnouel.io/'
+  'https://cors-anywhere.herokuapp.com/https://feeds.pinboard.in/json/u:mahnouel/t:mahnouel.io/'
 
 function get (url) {
   return new Promise(function (resolve, reject) {
