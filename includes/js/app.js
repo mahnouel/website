@@ -36,15 +36,17 @@ get(RSS_URL).then(data => {
     link.innerHTML = item.d
 
     const description = document.createElement('small')
+    description.classList.add('link__description')
     description.innerHTML = `${item.n}`
 
-    const li = document.createElement('li')
-    li.appendChild(link)
-    li.appendChild(document.createElement('br'))
-    li.appendChild(description)
+    const element = document.createElement('span')
+    element.classList.add('etc__item')
+    element.appendChild(link)
+    // li.appendChild(document.createElement('br'))
+    // element.appendChild(description)
 
     const container = document.querySelector('.js-etc')
-    container.appendChild(li)
+    container.appendChild(element)
   }
   console.log(json)
 })

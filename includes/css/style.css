@@ -15,7 +15,7 @@ body{
 h1,h2{display:none}
 ul{line-height:1.5}
 
-.link:not(.button){
+.link{
   font-weight:bold;
   color:#777;
   text-decoration:none;
@@ -28,6 +28,12 @@ ul{line-height:1.5}
 }
 .link:visited {
   color:inherit;
+}
+.etc__item{
+  margin-right:1em;
+}
+.etc__item .link{
+  margin-right:.5em;
 }
 
 .button{
