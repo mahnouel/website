@@ -14,6 +14,7 @@ body{
 }
 h1,h2{display:none}
 ul{line-height:1.5}
+
 .link:not(.button){
   font-weight:bold;
   color:#777;

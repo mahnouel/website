@@ -5,5 +5,10 @@
   "main": "index.htm",
   "repository": "https://github.com/mahnouel/website",
   "author": "Manuel K",
-  "license": "Copyright (C) 2018"
+  "license": "Copyright (C) 2018",
+  "eslintConfig": {
+    "env": {
+        "browser": true
+    }
+  }
 }
