@@ -10,5 +10,14 @@
     "env": {
         "browser": true
     }
+  },
+  "devDependencies": {
+    "parcel":"^1.8.1"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "start": "parcel serve index.html --port $PORT"
   }
 }
