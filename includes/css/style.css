@@ -1,33 +1,48 @@
 @import url(https://rsms.me/inter/inter-ui.css);
 
 html{
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color:black;
   min-height: 100vh;
+  margin-left:1em;
+  margin-right:1em;
 }
 *{box-sizing: border-box;}
 body{
-  color:#111;
+  color:#fff;
   font-family: 'Inter UI', sans-serif;
   font-weight:400;
-  max-width:20em;
+  max-width:30em;
+  font-size: 24px;
   margin:auto;
+
 }
 h1,h2{display:none}
-ul{line-height:1.5}
+ul{line-height:1.5;}
+li{
+  margin-bottom:.25em;
+}
 
 .link{
   font-weight:bold;
-  color:#777;
-  text-decoration:none;
-  box-shadow:inset 0 -0.5em 0 rgba(0,0,0,.1);
-  transition:box-shadow .25s;
-}
-.link:hover{
-  color:inherit;
-  box-shadow:inset 0 -0.75em 0 rgba(0,0,0,.1);
+  background-color:rgba(255,255,255,.1);
+  border-radius:.25em;
+  padding:.0em .25em;
+  display: inline-block;
+
+  color:#7FDBFF;
+  text-decoration:underline;
+  transition:box-shadow .4s, transform .4s;
 }
 .link:visited {
-  color:#111;
+  color:#0074D9;
+}
+.link:hover{
+  color:#fff;
+  background-color:rgba(255,255,255,.25);
+
+  text-decoration:none;
+  box-shadow: .25em .25em 0 #333;
+  transform: translate(-0.25em, -0.25em);
 }
 
 .etc__item{
@@ -49,12 +64,31 @@ ul{line-height:1.5}
 }
 
 .card{
-  border: 1px solid black;
+  display:inline-block;
+  background-color:rgba(255,255,255,.05);
+  border-radius: .25em;
+  box-shadow: .25em .25em 0 #333, .5em .5em 0 #111;
+  border: .1em solid #666;
   padding:.25em 1em;
   margin-top:1em;
   margin-bottom:1em;
+  max-width:15em;
+  margin-right:1em;
+  vertical-align:top;
+  transform:translate(-0.25em, -0.25em);
+  transition:transform .4s, box-shadow .4s;
+}
+.card:hover{
+  box-shadow: 0 0 0 #333, .25em .25em 0 #111;
+  transform:translate(0, 0);
+}
+
+@media(max-width:768px){
+  .card{
+    width:100%;
+  }
 }
 
 .bg-grey{
-  background-color:#e0e0e0;
+  background-color:;
 }
