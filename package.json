@@ -2,7 +2,7 @@
   "name": "website",
   "version": "1.0.0",
   "description": "My own website",
-  "main": "index.html",
+  "main": "src/index.html",
   "repository": "https://github.com/mahnouel/website",
   "author": "Manuel K",
   "license": "Copyright (C) 2018",
