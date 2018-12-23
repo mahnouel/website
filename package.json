@@ -1,21 +1,13 @@
 {
-  "name": "Website",
+  "name": "website",
   "version": "1.0.0",
   "description": "My own website",
-  "main": "index.htm",
+  "main": "src/index.html",
   "repository": "https://github.com/mahnouel/website",
   "author": "Manuel K",
   "license": "Copyright (C) 2018",
-  "eslintConfig": {
-    "env": {
-        "browser": true
-    }
-  },
   "devDependencies": {
-    "parcel":"^1.8.1"
-  },
-  "engines": {
-    "node": "10.x"
+    "parcel": "^1.8.1"
   },
   "scripts": {
     "start": "parcel serve index.html --port $PORT"

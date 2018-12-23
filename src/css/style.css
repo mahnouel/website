@@ -1,0 +1,122 @@
+@import url(https://rsms.me/inter/inter-ui.css);
+
+html {
+  --backgroundColor: #fff;
+  --color: #111;
+  --urlColor: #0074d9;
+  --urlColorHover: #fff;
+  --urlBackgroundColorHover: #3d9970;
+  --urlColorVisited: #b10dc9;
+
+  background-color: var(--backgroundColor);
+  color: var(--color);
+
+  min-height: 100vh;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter UI", sans-serif;
+  font-weight: 400;
+  max-width: 30em;
+  font-size: 150%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+ul {
+  line-height: 1.5;
+  padding-left: 1.25em;
+}
+li {
+  margin-bottom: 0.25em;
+}
+p {
+  margin:0;
+  max-width: 20em;
+}
+h1, h2{
+  font-size:0;
+  margin:0;
+}
+.article {
+  --flow-space: 1em;
+}
+
+.article > * + * {
+  margin-top: var(--flow-space);
+}
+
+.link {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25em;
+  padding: 0em 0.25em;
+  display: inline-block;
+
+  color: var(--urlColor);
+  text-decoration: underline;
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+.link:visited {
+  color: var(--urlColorVisited);
+}
+.link:hover {
+  color: var(--urlColorHover);
+  background-color: var(--urlBackgroundColorHover);
+
+  text-decoration: none;
+  /*box-shadow: 0.15em 0.15em 0 rgba(0, 0, 0, 0.25);
+  transform: translate(-0.15em, -0.15em);*/
+}
+
+.etc__item {
+  margin-right: 0.25em;
+}
+
+.button {
+  border: 0;
+  border-radius: 0.25em;
+  background-color: #333;
+  color: white;
+  padding: 0.25em 0.5em;
+  display: inline-block;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: var(--urlBackgroundColorHover);
+  color: var(--urlColorHover);
+}
+
+.card {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25em;
+  box-shadow: 0.25em 0.25em 0 rgba(0, 0, 0, 0.25),
+    0.5em 0.5em 0 rgba(0, 0, 0, 0.25);
+  border: 0.1em solid #666;
+  padding: 0.25em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  max-width: 15em;
+  margin-right: 1em;
+  vertical-align: top;
+  transform: translate(-0.25em, -0.25em);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.card:hover {
+  box-shadow: 0 0 0 #333, 0.25em 0.25em 0 rgba(0, 0, 0, 0.25);
+  transform: translate(0, 0);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 0.5em);
+  }
+}
+
+.bg-grey {
+  background-color: ;
+}
