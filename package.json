@@ -5,11 +5,12 @@
   "main": "src/index.html",
   "repository": "https://github.com/mahnouel/website",
   "author": "Manuel K",
-  "license": "Copyright (C) 2018",
+  "license": "private",
   "devDependencies": {
     "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel serve index.html --port $PORT"
+    "serve": "parcel serve src/index.html",
+    "build": "parcel build src/index.html"
   }
 }

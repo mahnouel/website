@@ -1,3 +1,5 @@
 deploy.php
 .vscode
 dist
+node_modules
+.config
