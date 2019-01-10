@@ -52,7 +52,6 @@ get(RSS_URL).then(data => {
 });
 
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-<script>
 (function(f, a, t, h, o, m){
 	a[h]=a[h]||function(){
 		(a[h].q=a[h].q||[]).push(arguments)
@@ -64,6 +63,5 @@ get(RSS_URL).then(data => {
 })(document, window, '//fathom.m-k.io/tracker.js', 'fathom');
 fathom('set', 'siteId', 'IMSHL');
 fathom('trackPageview');
-</script>
 <!-- / Fathom -->
  
