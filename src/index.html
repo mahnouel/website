@@ -14,7 +14,6 @@
 		<h1>Hi, I am Manuel</h1>
 	</header>
 	<main>
-
 		<article class="article">
 			<header>
 				<h2>About</h2>
@@ -96,25 +95,26 @@
         </li>
       </ul>
     </article>
-    
-    <!-- <article>
-      <header>
-        <h2>Take a look</h2>
-      </header>
-    
-      <p>
-        If you're bored, take this! 👀
-      </p>
-    
-      <p class="js-etc">
-        
-      </p>
-    </article> -->
   </main>
   <!-- <footer>
     <a class="button" href="https://github.com/mahnouel/website" target="_blank">
       view source</a>
   </footer> -->
   <script src="js/app.js"></script>
+  <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+  <script>
+    (function(f, a, t, h, o, m){
+      a[h]=a[h]||function(){
+        (a[h].q=a[h].q||[]).push(arguments)
+      };
+      o=f.createElement('script'),
+      m=f.getElementsByTagName('script')[0];
+      o.async=1; o.src=t; o.id='fathom-script';
+      m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.m-k.io/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'IMSHL');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
 </body>
 </html>
