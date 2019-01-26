@@ -3,3 +3,5 @@ deploy.php
 dist
 node_modules
 .config
+secret.yml
+.cache
