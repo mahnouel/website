@@ -1,2 +1,4 @@
-FROM php:7.0-apache
-COPY dist/ /var/www/html/
+FROM nginx:alpine
+COPY dist /data/www/
+COPY nginx.conf /etc/nginx/nginx.conf
+CMD ["nginx-debug",  "-g daemon off;"]

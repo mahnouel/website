@@ -29,9 +29,10 @@ blocks:
             - checkout
             - cache restore node-modules-$(checksum yarn.lock)
             - yarn build
+            - cache store my-website dist
         - name: Docker
           commands:
-            - checkout
+            - cache restore my-website
             - docker build -t my-website .
 
   - name: "Push Image"
