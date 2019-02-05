@@ -32,6 +32,7 @@ blocks:
             - cache store my-website dist
         - name: Docker
           commands:
+            - checkout
             - cache restore my-website
             - docker build -t my-website .
 
