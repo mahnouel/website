@@ -35,7 +35,7 @@ blocks:
     task:
       env_vars:
         - name: REGISTRY
-          value: registry.m-k.io
+          value: http://registry.m-k.io
       secrets:
         - name: AWS
       prologue:
