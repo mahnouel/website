@@ -34,27 +34,23 @@ blocks:
   - name: "Push Image"
     task:
       env_vars:
-        - name: AWS_DEFAULT_REGION
-          value: eu-central-1
-        - name: ECR_REGISTRY
-          value: 159310666522.dkr.ecr.eu-central-1.amazonaws.com/mahnouel
+        - name: REGISTRY
+          value: registry.m-k.io
       secrets:
         - name: AWS
       prologue:
         commands:
           # Install the most up-to-date AWS cli
-          - sudo pip install awscli
+          - docker login ${REGISTRY} -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD}
           - checkout
           - cache restore my-website
-          # ecr get-login outputs a login command, so execute that with bash
-          - aws ecr get-login --no-include-email | bash
 
       jobs:
         - name: Push Image
           commands:
             - docker build . -t my-website
-            - docker tag my-website "${ECR_REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
-            - docker push "${ECR_REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
+            - docker tag my-website "${REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
+            - docker push "${REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
 # promotions:
 #   - name: Deploy (Production)
 #     pipeline_file: deploy.yml
