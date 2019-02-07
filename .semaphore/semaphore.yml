@@ -49,8 +49,8 @@ blocks:
         - name: Push Image
           commands:
             - docker build . -t my-website
-            - docker tag my-website "${REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
-            - docker push "${REGISTRY}:${SEMAPHORE_GIT_SHA:0:7}"
+            - docker tag my-website registry.m-k.io:${SEMAPHORE_GIT_SHA:0:7}
+            - docker push registry.m-k.io:${SEMAPHORE_GIT_SHA:0:7}
 # promotions:
 #   - name: Deploy (Production)
 #     pipeline_file: deploy.yml
