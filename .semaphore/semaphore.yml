@@ -51,6 +51,7 @@ blocks:
             - docker build . -t my-website
             - docker tag my-website registry.m-k.io/my-website:${SEMAPHORE_GIT_SHA:0:7}
             - docker push registry.m-k.io/my-website:${SEMAPHORE_GIT_SHA:0:7}
+            - docker push registry.m-k.io/my-website:latest
 # promotions:
 #   - name: Deploy (Production)
 #     pipeline_file: deploy.yml
