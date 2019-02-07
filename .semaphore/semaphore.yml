@@ -50,6 +50,7 @@ blocks:
           commands:
             - docker build . -t my-website
             - docker tag my-website registry.m-k.io/my-website:${SEMAPHORE_GIT_SHA:0:7}
+            - docker tag my-website registry.m-k.io/my-website:latest
             - docker push registry.m-k.io/my-website:${SEMAPHORE_GIT_SHA:0:7}
             - docker push registry.m-k.io/my-website:latest
 # promotions:
