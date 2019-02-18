@@ -7,10 +7,21 @@
   "author": "Manuel K",
   "license": "private",
   "devDependencies": {
-    "parcel": "^1.8.1"
+    "@vuepress/plugin-blog": "^1.0.0-alpha.0",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-mark": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "parcel": "^1.8.1",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^1.0.0-alpha.39"
   },
   "scripts": {
     "serve": "parcel serve src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "docs:dev": "yarn vuepress dev src",
+    "docs:build": "yarn vuepress build src -d ./dist"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }
