@@ -3,12 +3,12 @@ title: Referenzen
 lang: de
 ---
 
-## Referenzen
+## Referenz
 
-Seit September 2015 arbeite ich für [3pc](//3pc.de).
+Seit September 2015 arbeite ich für [3pc](https://3pc.de). Durch meine Hilfe sind dort unter anderem folgende Internetpräsenzen entstanden:
 
-- [Frankfurt Oper](//oper-frankfurt.de/)
-- [Kampnagel Kosmos](//kampnagel.de/kosmos)
-- [Lessingfestival](//lessingfestival.de/)
-- [e-publisher:stage](//e-publisher.de/)
-- [KulturSommer](http://kultursommer-wf.de/)
+- [Frankfurt Oper](https://oper-frankfurt.de/)
+- [Kampnagel Kosmos](https://kampnagel.de/kosmos)
+- [Lessingfestival](https://lessingfestival.de/)
+- [e-publisher:stage](https://e-publisher.de/)
+- [KulturSommer](https://kultursommer-wf.de/)

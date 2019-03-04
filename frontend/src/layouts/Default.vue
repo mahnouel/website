@@ -1,8 +1,9 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <header class="header" v-if="!hideHeader">
       <g-link class="header__title" to="/">{{ $static.metaData.siteName }}</g-link>
       <nav class="nav">
+        {{$page}}
         <g-link class="button" to="/">Startseite</g-link>
         <g-link class="button" to="/about">About</g-link>
       </nav>
@@ -18,6 +19,13 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  props: ["hideHeader"]
+};
+</script>
+
 
 <style>
 @import url("https://rsms.me/inter/inter.css");
@@ -35,10 +43,11 @@ body {
   padding: 0;
   font-size: 150%;
   line-height: 1.5;
+  padding-bottom: 4rem;
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 700px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -56,13 +65,13 @@ body {
 }
 
 .header {
-  padding: 1em;
+  /* padding: 1em; */
   border-radius: 0.75rem;
-  box-shadow: -0.5rem -0.5rem 0rem rgba(0, 255, 0, 0.5),
+  /* box-shadow: -0.5rem -0.5rem 0rem rgba(0, 255, 0, 0.5),
     0.5rem -0.5rem 0rem rgba(255, 0, 255, 0.5),
     -0.5rem 0.5rem 0rem rgba(0, 255, 255, 0.5),
     -0.5rem -0.5rem 0rem rgba(255, 255, 0, 0.5),
-    0.5rem 0.5rem 0rem rgba(255, 0, 0, 0.5);
+    0.5rem 0.5rem 0rem rgba(255, 0, 0, 0.5); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,8 +80,10 @@ body {
 }
 
 .header__title {
+  font-size: 1.25em;
   color: inherit;
   text-decoration: none;
+  border-radius: 0.75rem;
 }
 
 .button {

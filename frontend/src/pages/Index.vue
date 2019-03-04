@@ -1,13 +1,12 @@
 <template>
-  <Layout>
+  <Layout :hideHeader="true">
     <main>
-      <h1 class="visually-hidden">Manuel K. | Startseite</h1>
-      <p>
-        Ich freue mich Sie an dieser Stelle herzlich zu begrüßen. Diese Seite soll Ihnen ermöglichen sich ein Bild von mir zu machen.
-        Außerdem möchte ich dies als Plattform nutzen, um neu Erlerntes zu dokumentieren und Ihnen
-        interessante Inhalte im Bereich des Webdevelopments anzubieten.
+      <h1>Ich bin Manuel.</h1>
+      <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
+      <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
+        <br>Zusätzlich werden Sie hier interessante Inhalte und Meinungen zu dem Bereich der Webentwicklung finden.
       </p>
-      <article class="card">
+      <article class="card" v-if="$page.posts.length">
         <h2>Writing</h2>
         <p>Blabla</p>
         <ul v-for="post in $page.posts.edges" v-bind:key="post.id">
@@ -22,6 +21,7 @@
         v-bind:key="content.id"
         v-html="content.node.content"
       ></article>
+      <a href="/en">You're not speaking German? Visit this site in English -></a>
     </main>
 
     <!--     
@@ -75,9 +75,8 @@ h2 {
   margin-top: 1rem;
   font-size: 1.75rem;
 }
+
 .card {
-}
-.card + .card {
   margin-top: 2rem;
 }
 p,
@@ -88,12 +87,66 @@ h2 {
 ul {
   list-style-type: none;
   padding-left: 0;
-  margin-top: 0.5rem;
 }
-p {
+p,
+ul {
   margin-top: 0.5rem;
 }
 a {
   text-decoration: none;
+  background-color: #dda;
+  color: black;
+  padding: 0 0.25em;
+  border-radius: 0.25em;
+  position: relative;
+  transition: border-radius 0.8s, background-color 0.4s;
+}
+a:visited {
+  background-color: #eee;
+}
+a:hover {
+  background-color: #ccc;
+  color: black;
+  border-radius: 1em;
+}
+[target="_blank"]:before {
+  content: " ↗️ ";
+  vertical-align: text-top;
+  font-weight: bold;
+}
+/* [target="_blank"]:after {
+  opacity: 0;
+  content: attr(href);
+  font-size: 0.8em;
+  position: absolute;
+  white-space: nowrap;
+  max-width: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #ff0;
+  border-radius: 1em;
+  left: 0;
+  top: 100%;
+  padding: 0 0.25em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  z-index: 1;
+}
+[target="_blank"]:hover:after {
+  transition: opacity 0s 0.5s;
+  opacity: 1;
+} */
+/* [target="_blank"][href*="instagram"]:before,
+[target="_blank"][href*="facebook"]:before {
+  color: #3b5998;
+}
+[target="_blank"][href*="spotify"]:before {
+  color: #19b954;
+}
+[target="_blank"][href*="youtube"]:before {
+  color: #19b954;
+} */
+[aria-hidden="true"] {
+  display: none;
 }
 </style>

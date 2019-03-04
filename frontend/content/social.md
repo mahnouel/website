@@ -3,9 +3,11 @@ title: Networks
 lang: de
 ---
 
-## Netzwerke
+## Netzwerk
 
-- [Pinboard](//pinboard.in/u:mahnouel/profile/public)
-- [GitHub](//github.com/mahnouel)
-- [Instagram](//instagram.com/mahnouel)
-- [Spotify](//open.spotify.com/user/mahnouel?si=aYRgHHqMRqmrPBfyx89tsw)
+Mehr oder weniger aktiv bediene ich im Moment die folgenden Plattformen:
+
+- [Pinboard](https://pinboard.in/u:mahnouel/)
+- [GitHub](https://github.com/mahnouel)
+- [Instagram](https://instagram.com/mahnouel)
+- [Spotify](https://open.spotify.com/user/mahnouel?si=aYRgHHqMRqmrPBfyx89tsw)
