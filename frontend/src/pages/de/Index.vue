@@ -1,27 +1,26 @@
 <template>
   <Layout :hideHeader="true">
     <main>
-      <h1>Ich bin Manuel.</h1>
+      <h1>Manuel</h1>
       <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
       <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
         <br>Zusätzlich werden Sie hier interessante Inhalte und Meinungen zu dem Bereich der Webentwicklung finden.
       </p>
-      <article class="card" v-if="$page.posts.length">
-        <h2>Writing</h2>
-        <p>Blabla</p>
+      <article class="card" v-if="$page.posts.edges.length">
+        <h2>Blog</h2>
         <ul v-for="post in $page.posts.edges" v-bind:key="post.id">
           <li>
             <g-link :to="post.node.path">{{ post.node.title }}</g-link>
           </li>
         </ul>
       </article>
+
       <article
         class="card"
         v-for="content in $page.contents.edges"
         v-bind:key="content.id"
         v-html="content.node.content"
       ></article>
-      <a href="/en">You're not speaking German? Visit this site in English -></a>
     </main>
 
     <!--     
@@ -70,7 +69,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus">
 h2 {
   margin-top: 1rem;
   font-size: 1.75rem;
@@ -78,42 +77,52 @@ h2 {
 
 .card {
   margin-top: 2rem;
+  display: inline-block;
+  vertical-align: top;
+
+  li {
+    display: inline-block;
+  }
 }
-p,
-ul,
-h2 {
+
+p, ul, h2 {
   margin-bottom: 0;
 }
+
 ul {
   list-style-type: none;
   padding-left: 0;
 }
-p,
-ul {
+
+p, ul {
   margin-top: 0.5rem;
 }
+
 a {
+  white-space: nowrap;
   text-decoration: none;
-  background-color: #dda;
-  color: black;
+  background-color: #dde;
   padding: 0 0.25em;
-  border-radius: 0.25em;
+  border-radius: 1em;
   position: relative;
-  transition: border-radius 0.8s, background-color 0.4s;
+  transition: opacity 0.2s;
+  color: #111111;
 }
+
 a:visited {
   background-color: #eee;
 }
+
 a:hover {
-  background-color: #ccc;
-  color: black;
-  border-radius: 1em;
+  opacity: 0.6;
 }
-[target="_blank"]:before {
-  content: " ↗️ ";
+
+[target='_blank']:before {
+  content: ' ↗️ ';
   vertical-align: text-top;
   font-weight: bold;
 }
+
 /* [target="_blank"]:after {
   opacity: 0;
   content: attr(href);
@@ -146,7 +155,7 @@ a:hover {
 [target="_blank"][href*="youtube"]:before {
   color: #19b954;
 } */
-[aria-hidden="true"] {
+[aria-hidden='true'] {
   display: none;
 }
 </style>

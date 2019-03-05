@@ -5,7 +5,7 @@ lang: de
 
 ## Netzwerk
 
-Mehr oder weniger aktiv bediene ich im Moment die folgenden Plattformen:
+Mehr oder weniger aktiv bediene ich derzeit die folgenden Plattformen:
 
 - [Pinboard](https://pinboard.in/u:mahnouel/)
 - [GitHub](https://github.com/mahnouel)

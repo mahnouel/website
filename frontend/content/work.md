@@ -3,7 +3,7 @@ title: Referenzen
 lang: de
 ---
 
-## Referenz
+## Arbeit
 
 Seit September 2015 arbeite ich für [3pc](https://3pc.de). Durch meine Hilfe sind dort unter anderem folgende Internetpräsenzen entstanden:
 
