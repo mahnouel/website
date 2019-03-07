@@ -1,33 +1,30 @@
 <template>
   <Layout :hideHeader="true">
-    <main>
+    <main class="main">
       <h1 class="visually-hidden">Manuel</h1>
       <h2>404</h2>
-      <p>This route is empty.
-        <br>Dieser Pfad ist nicht vorhanden.
+      <p>
+        This route is empty.
+        Teleport back
+        <strong>
+          <g-link to="/">Home 🏡</g-link>
+        </strong>
       </p>
-      <g-link class="button" to="/">Home</g-link>
+      <p>
+        If you think this is an error, I'd love if you submit an issue at
+        <a
+          href="https://github.com/mahnouel/Website/issues/new?assignees=&labels=404&template=unexpected-empty-route.md&title=Unexpected+empty+route"
+          target="_blank"
+        >Github</a>
+      </p>
     </main>
-
-    <!--     
-     Learn how to use images here: https://gridsome.org/docs/images 
-    <g-image alt="Example image" src="~/favicon.png" width="135"/>
-
-    <h1>Hello, world!</h1>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>-->
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: ""
+    title: "404"
   }
 };
 </script>

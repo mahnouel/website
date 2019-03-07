@@ -12,5 +12,8 @@
   "scripts": {
     "serve": "parcel serve src/index.html",
     "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "remark-highlight.js": "^5.1.0"
   }
 }

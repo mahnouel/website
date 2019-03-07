@@ -7,22 +7,32 @@
 module.exports = {
   siteName: "Manuel K",
   transformers: {
-    remark: {}
+    remark: {
+      plugins: ["remark-highlight.js"]
+    }
   },
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "blog/**/*.md",
-        typeName: "Post",
-        route: "/blog/:year/:slug"
+        path: "content/output/**/*.md",
+        typeName: "Output",
+        route: "/:lang/:year/@/:slug"
       }
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/**/*.md",
-        typeName: "Content"
+        path: "content/information/**/*.md",
+        typeName: "Information"
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/learning/**/*.md",
+        typeName: "Learning",
+        route: "/:lang/:year/til/:month-:day/:slug"
       }
     }
   ]

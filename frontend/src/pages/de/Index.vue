@@ -1,27 +1,42 @@
 <template>
   <Layout :hideHeader="true">
-    <main>
-      <h1>Manuel</h1>
+    <main class="main">
+      <h1>Manuel K</h1>
       <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
       <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
         <br>Zusätzlich werden Sie hier interessante Inhalte und Meinungen zu dem Bereich der Webentwicklung finden.
       </p>
-      <article class="card" v-if="$page.posts.edges.length">
-        <h2>Blog</h2>
-        <ul v-for="post in $page.posts.edges" v-bind:key="post.id">
-          <li>
-            <g-link :to="post.node.path">{{ post.node.title }}</g-link>
+      <section v-if="$page.output.edges.length">
+        <h2>📝 Output</h2>
+        <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
+          <h3>{{ output.node.title }}</h3>
+          <small>{{ output.node.date | date }}</small>
+          {{output.node.excerpt}}
+          <g-link :to="output.node.path">Lesen</g-link>
+        </article>
+        <p v-if="$page.output.edges.length >= 3">Zum
+          <g-link to="/de/output/">Archiv</g-link>
+        </p>
+      </section>
+
+      <section v-if="$page.learning.edges.length">
+        <h2>📚 Today I Learned</h2>
+        <ul>
+          <li class="clickable" v-for="learning in $page.learning.edges" v-bind:key="learning.id">
+            {{ learning.node.date | date }}
+            <g-link :to="learning.node.path">{{ learning.node.title }}</g-link>
           </li>
         </ul>
-      </article>
-
-      <article
-        class="card"
-        v-for="content in $page.contents.edges"
-        v-bind:key="content.id"
-        v-html="content.node.content"
-      ></article>
+      </section>
     </main>
+
+    <aside class="aside">
+      <article
+        v-for="information in $page.information.edges"
+        v-bind:key="information.id"
+        v-html="information.node.content"
+      ></article>
+    </aside>
 
     <!--     
      Learn how to use images here: https://gridsome.org/docs/images 
@@ -39,8 +54,8 @@
 </template>
 
 <page-query>
-query Content {
-  contents: allContent {
+query Homepage {
+  information: allInformation {
     edges {
       node {
         title
@@ -49,10 +64,21 @@ query Content {
       }
     }
   }
-  posts: allPost {
+  output: allOutput(perPage: 3) {
     edges {
       node {
         title
+        path
+        date
+        excerpt
+      }
+    }
+  }
+  learning: allLearning {
+    edges {
+      node {
+        title
+        date
         path
       }
     }
@@ -62,100 +88,17 @@ query Content {
 </page-query>
 
 <script>
+import moment from "moment";
+
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "🏡👨‍💻"
+  },
+  filters: {
+    date: function(value) {
+      if (!value) return "";
+      return moment(value).format("DD.MM.YYYY");
+    }
   }
 };
 </script>
-
-<style lang="stylus">
-h2 {
-  margin-top: 1rem;
-  font-size: 1.75rem;
-}
-
-.card {
-  margin-top: 2rem;
-  display: inline-block;
-  vertical-align: top;
-
-  li {
-    display: inline-block;
-  }
-}
-
-p, ul, h2 {
-  margin-bottom: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-p, ul {
-  margin-top: 0.5rem;
-}
-
-a {
-  white-space: nowrap;
-  text-decoration: none;
-  background-color: #dde;
-  padding: 0 0.25em;
-  border-radius: 1em;
-  position: relative;
-  transition: opacity 0.2s;
-  color: #111111;
-}
-
-a:visited {
-  background-color: #eee;
-}
-
-a:hover {
-  opacity: 0.6;
-}
-
-[target='_blank']:before {
-  content: ' ↗️ ';
-  vertical-align: text-top;
-  font-weight: bold;
-}
-
-/* [target="_blank"]:after {
-  opacity: 0;
-  content: attr(href);
-  font-size: 0.8em;
-  position: absolute;
-  white-space: nowrap;
-  max-width: 10em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background: #ff0;
-  border-radius: 1em;
-  left: 0;
-  top: 100%;
-  padding: 0 0.25em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  z-index: 1;
-}
-[target="_blank"]:hover:after {
-  transition: opacity 0s 0.5s;
-  opacity: 1;
-} */
-/* [target="_blank"][href*="instagram"]:before,
-[target="_blank"][href*="facebook"]:before {
-  color: #3b5998;
-}
-[target="_blank"][href*="spotify"]:before {
-  color: #19b954;
-}
-[target="_blank"][href*="youtube"]:before {
-  color: #19b954;
-} */
-[aria-hidden='true'] {
-  display: none;
-}
-</style>
