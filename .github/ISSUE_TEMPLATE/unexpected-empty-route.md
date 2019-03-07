@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-*URL / PATH*:
+### URL / Path:
 
-*EXPECTED CONTENT: *
+### Expected Content:
