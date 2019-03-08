@@ -23,9 +23,6 @@ blocks:
       env_vars:
         - name: NODE_ENV
           value: production
-      prologue:
-        commands:
-          - yarn global add gridsome
       jobs:
         - name: Yarn
           commands:
