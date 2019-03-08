@@ -29,6 +29,7 @@ blocks:
             - checkout
             - cache restore node-modules-$(checksum yarn.lock)
             - yarn build
+            - cache delete my-website
             - cache store my-website dist
 
   - name: "Push Image"
