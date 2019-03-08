@@ -1,0 +1,26 @@
+.layout 
+  display: grid;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 950px;
+  grid-column-gap: 2rem;
+  grid-template-areas: 'header' 'main' 'aside' 'footer';
+
+
+@media (min-width: 700px) 
+  .layout 
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'header header' 'main aside' 'footer footer';
+  
+.layout > .main 
+  grid-area: main;
+
+
+.layout > .aside 
+  grid-area: aside;
+
+
+.layout > .header 
+  grid-area: header;
+

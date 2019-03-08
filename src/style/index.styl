@@ -1,0 +1,100 @@
+
+@import 'util';
+@import 'generic';
+@import 'layout';
+@import 'header';
+@import 'highlight';
+@import 'button';
+
+b(val)  // b for bracket
+  unquote('[') + val + unquote(']');
+
+* 
+  box-sizing: border-box;
+
+
+h1 
+  margin-top: 2rem;
+
+h2 
+  margin-top: 2rem;
+  font-size: 1.75rem;
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a
+  display: none;
+
+.main > h2 
+  margin-top: 0;
+
+h3 
+  font-size: 1.5rem;
+
+p, ul, h2, h3, h1
+  margin-bottom: 0;
+
+p, ul 
+  margin-top: 0.5rem;
+
+.main ul li 
+  margin-top: 0.5rem;
+
+.aside ul 
+  list-style-type: none;
+  padding-left: 0;
+
+
+
+a 
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #dde;
+  padding: 0 0.25em;
+  border-radius: 1em;
+  position: relative;
+  color: #111111;
+  border-radius: 0.75rem;
+
+a:visited 
+  background-color: #eee;
+
+
+a:hover 
+  opacity: 0.6;
+
+
+a[target='_blank']
+  border-radius: 1em;
+
+
+a[target='_blank']:before 
+  content: ' ↗️ ';
+  vertical-align: text-top;
+  font-weight: bold;
+
+blockquote
+  border-left: .4rem solid currentColor;
+  margin: 0;
+  padding-left: .5rem;
+
+img
+  max-width: 100%;
+  border-radius: .25em;
+
+.clickable
+  position: relative;
+  &:hover h3
+    opacity: .6;
+  a
+    position:static;
+    &::after
+      content:' '
+      display:block;
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
