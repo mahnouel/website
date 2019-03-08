@@ -32,7 +32,7 @@ module.exports = {
       options: {
         path: "content/learning/**/*.md",
         typeName: "Learning",
-        route: "/:lang/:year/til/:month-:day/:slug"
+        route: "/:lang/:year/til/:month:day/:slug"
       }
     }
   ]

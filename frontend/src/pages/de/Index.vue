@@ -24,7 +24,12 @@
         <ul>
           <li class="clickable" v-for="learning in $page.learning.edges" v-bind:key="learning.id">
             {{ learning.node.date | date }}
-            <g-link :to="learning.node.path">{{ learning.node.title }}</g-link>
+            <g-link :to="learning.node.path" v-if="!learning.node.url">{{ learning.node.title }}</g-link>
+            <a
+              :href="learning.node.url"
+              v-if="learning.node.url"
+              target="_blank"
+            >{{ learning.node.title }}</a>
           </li>
         </ul>
       </section>
@@ -80,6 +85,7 @@ query Homepage {
         title
         date
         path
+        url
       }
     }
   }

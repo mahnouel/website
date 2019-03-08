@@ -12,18 +12,18 @@ Daher möchte ich Ihnen hier einen kleinen Überblick der Wichtigsten in meinem 
 
 ## Oberfläche
 
-![Bild](/img/tools/vscode.png "bild")
+![Screenshot von Visual Studio Code](/img/tools/vscode.png "Editor auf blauem Grund")
 
 - **Schriftart**: [PragmataPro](https://www.fsd.it/shop/fonts/pragmatapro/)
 
   PragmataPro unterstützt eine Vielzahl an Ligaturen. Beispielsweise:
 
-  ![Bild](/img/tools/font.png "bild")
+  ![Screenshot der Ligaturen](/img/tools/font.png)
 
 - **Farbschema**: [IBM Color Scheme](https://marketplace.visualstudio.com/items?itemName=paperfanz.ibm-color-palette-color-scheme)
 - **Icons**: [VSCode-Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
-  ![Bild](/img/tools/icons.png "bild")
+  ![Screenshot der Icons](/img/tools/icons.png)
 
 ## Nützliche Erweiterungen
 

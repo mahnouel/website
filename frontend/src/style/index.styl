@@ -86,9 +86,11 @@ img
 
 .clickable
   position: relative;
+  &:hover h3
+    opacity: .6;
   a
     position:static;
-    &::before
+    &::after
       content:' '
       display:block;
       position: absolute;
