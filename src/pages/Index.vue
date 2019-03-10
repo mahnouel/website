@@ -3,9 +3,9 @@
     <main class="main">
       <h1>Manuel K</h1>
       <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
-      <!-- <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
+      <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
         <br>Zusätzlich werden Sie hier interessante Inhalte und Meinungen zu dem Bereich der Webentwicklung finden.
-      </p>-->
+      </p>
       <section v-if="$page.output.edges.length">
         <h2>📝 Output</h2>
         <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
