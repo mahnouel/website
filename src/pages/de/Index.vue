@@ -3,11 +3,9 @@
     <main class="main">
       <h1>Manuel K</h1>
       <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
-      <p>Mit dieser Seite möchte ich Sie über mich informieren, von mir überzeugen, und gleichzeitig Erlerntes dokumentieren.
-        <br>Zusätzlich werden Sie hier interessante Inhalte und Meinungen zu dem Bereich der Webentwicklung finden.
-      </p>
+      <p>Mit dieser Seite möchte ich Sie über mich informieren und gleichzeitig Erlerntes dokumentieren.</p>
       <section v-if="$page.output.edges.length">
-        <h2>📝 Output</h2>
+        <h2>Blog</h2>
         <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
           <h3>{{ output.node.title }}</h3>
           <small>{{ output.node.date | date }}</small>
@@ -20,7 +18,7 @@
       </section>
 
       <section v-if="$page.learning.edges.length">
-        <h2>📚 Today I Learned</h2>
+        <h2>TIL</h2>
         <ul>
           <li class="clickable" v-for="learning in $page.learning.edges" v-bind:key="learning.id">
             <g-link
