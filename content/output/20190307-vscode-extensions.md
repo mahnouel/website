@@ -1,14 +1,11 @@
 ---
 title: 👩‍🏭 Visual Studio Code Erweiterungen
-excerpt: Die richtigen Erweiterungen zu finden braucht Zeit und Glück - Eine Zusammenstellung derjenigen in meinem Arbeitsalltag.
+excerpt: Eine kleine Zusammenstellung der von mir genutzten Erweiterungen, zum Teil mit Anmerkungen.
 lang: de
 date: 2019-03-07
 ---
 
 # VSCode Erweiterungen
-
-Die richtigen Erweiterungen zu finden braucht Zeit und auch ein bisschen Glück.
-Daher möchte ich Ihnen hier einen kleinen Überblick der Wichtigsten in meinem Arbeitsalltag geben:
 
 ## Oberfläche
 
