@@ -17,7 +17,7 @@ module.exports = {
       options: {
         path: "content/output/**/*.md",
         typeName: "Output",
-        route: "/:year/@/:slug"
+        route: "/:lang/:year/@/:slug"
       }
     },
     {
@@ -32,7 +32,7 @@ module.exports = {
       options: {
         path: "content/learning/**/*.md",
         typeName: "Learning",
-        route: "/:year/til/:month:day/:slug"
+        route: "/:lang/:year/til/:month:day/:slug"
       }
     }
   ]

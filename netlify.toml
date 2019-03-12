@@ -1,0 +1,10 @@
+[build]
+  base = "/"
+  publish = "/dist/"
+  command = "yarn build"
+
+[[redirects]]
+from = "/"
+to = "/de"
+status = 301
+force = true

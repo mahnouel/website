@@ -1,7 +1,5 @@
 deploy.php
 .vscode
-dist
-node_modules
 .config
 secret.yml
 .cache
