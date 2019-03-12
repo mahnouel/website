@@ -5,6 +5,6 @@
 
 [[redirects]]
 from = "/"
-to = "/de"
+to = "/de/"
 status = 301
 force = true
