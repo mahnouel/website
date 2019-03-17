@@ -8,7 +8,7 @@ module.exports = {
   siteName: "Manuel K",
   transformers: {
     remark: {
-      plugins: ["remark-highlight.js"]
+      plugins: ["remark-highlight.js", "gatsby-remark-numbered-footnotes"]
     }
   },
   plugins: [

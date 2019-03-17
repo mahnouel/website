@@ -1,6 +1,7 @@
 ---
 title: Networks
 lang: de
+type: aside
 ---
 
 ## Netzwerk
