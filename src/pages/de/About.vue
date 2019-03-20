@@ -3,6 +3,11 @@
     <main class="main">
       <div v-html="$page.about.edges[0].node.content" class="text"></div>
     </main>
+    <footer class="footer">
+      <p>zur
+        <g-link to="/">Startseite 🏡</g-link>
+      </p>
+    </footer>
   </Layout>
 </template>
 

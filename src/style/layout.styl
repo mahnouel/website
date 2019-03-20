@@ -11,7 +11,7 @@
 @media (min-width: 700px) 
   .layout 
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: 'header header' 'main aside' 'footer footer';
+    grid-template-areas: 'header header' 'main aside' 'footer .';
   
 .layout > .main 
   grid-area: main;
@@ -24,4 +24,9 @@
 
 .layout > .header 
   grid-area: header;
+
+.layout > .footer 
+  margin-top: 4rem;
+  grid-area: footer;
+  text-align:center;
 
