@@ -8,7 +8,7 @@ type: about
 
 Ursprünglich komme ich aus Oberfranken. Seitdem ich bin, interessiere ich mich für das Internet. Zu Beginn waren es online Mehrspielerspiele[<sup>1</sup>](#note-1), eigene Gameserver und Plugins[<sup>2</sup>](#note-2), für welche Websites von mir entwickelt wurden.
 
-Mittlerweile lebe ich in Berlin. Digital Native, Kreateur und Entwickler sind auf mich zutreffende Begriffe. Das Programmieren von Anwendungen ist für mich ein Handwerk. Interesse habe ich vor allem für die Konzepte hinter den einzelnen Sprachen und Frameworks. Momentan bewege ich mich viel im Frontend, interessiere mich aber weiterhin auch für alle anderen Ebenen der Softwareentwicklung.
+Mittlerweile lebe ich in Berlin. Digital Native, Kreateur und Entwickler sind auf mich zutreffende Begriffe. Das Programmieren von Anwendungen ist für mich ein Handwerk. Interesse habe ich vor allem an den Konzepten hinter den einzelnen Sprachen und Frameworks. Momentan bewege ich mich viel im Frontend, aber begeistere mich weiterhin auch für alle anderen Ebenen der Softwareentwicklung.
 
 Programmieren macht mir Spaß: Es geht darum Lösungen zu finden. Herausfordernde Probleme, in immer kleinere herunterzubrechen und so Verständnis für sie zu entwickeln. Dennoch bin ich weniger Mathematiker, sondern habe vor allem Spaß wenn ich, um das gesteckte Ziel zu erreichen, kreativ sein und um die Ecke denken muss.
 
