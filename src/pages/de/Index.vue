@@ -1,9 +1,7 @@
 <template>
   <Layout :hideHeader="true">
     <main class="main">
-      <h1>Manuel K</h1>
-      <p>Um ganz trocken zu beginnen: Ich freue mich sehr Sie an dieser Stelle herzlichst zu begrüßen.</p>
-      <p>Mit dieser Seite möchte ich Sie über mich informieren und gleichzeitig Erlerntes dokumentieren.</p>
+      <div v-html="$page.intro.edges[0].node.content"></div>
       <section v-if="$page.output.edges.length">
         <h2>Blog</h2>
         <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
@@ -37,11 +35,7 @@
     </main>
 
     <aside class="aside">
-      <article
-        v-for="information in $page.information.edges"
-        v-bind:key="information.id"
-        v-html="information.node.content"
-      ></article>
+      <article v-for="aside in $page.aside.edges" v-bind:key="aside.id" v-html="aside.node.content"></article>
     </aside>
 
     <!--     
@@ -61,7 +55,16 @@
 
 <page-query>
 query Homepage {
-  information: allInformation {
+  intro: allInformation(filter:{type: {eq: "intro"}}) {
+    edges {
+      node {
+        title
+        path
+        content
+      }
+    }
+  }
+  aside: allInformation(filter:{type: {eq: "aside"}}) {
     edges {
       node {
         title
@@ -99,7 +102,7 @@ import moment from "moment";
 
 export default {
   metaInfo: {
-    title: "🏡👨‍💻"
+    title: "Entwickler"
   },
   filters: {
     date: function(value) {

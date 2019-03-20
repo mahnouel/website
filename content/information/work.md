@@ -1,6 +1,7 @@
 ---
 title: Referenzen
 lang: de
+type: aside
 ---
 
 ## Arbeit
