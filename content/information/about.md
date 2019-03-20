@@ -2,6 +2,9 @@
 title: About
 lang: de
 type: about
+jumpmarks:
+  - name: Kompetenzen
+    href: "#kompetenzen"
 ---
 
 # Über mich, Manuel

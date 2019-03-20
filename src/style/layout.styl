@@ -5,7 +5,7 @@
   padding-right: 1rem;
   max-width: 950px;
   grid-column-gap: 2rem;
-  grid-template-areas: 'header' 'main' 'aside' 'footer';
+  grid-template-areas: 'header' 'asideabove' 'main' 'aside' 'footer';
 
 
 @media (min-width: 700px) 
@@ -21,6 +21,12 @@
 .layout > .aside 
   grid-area: aside;
 
+.layout > .aside--prefer-above
+  grid-area: asideabove;
+
+@media (min-width: 700px) 
+  .layout > .aside--prefer-above
+    grid-area: aside;
 
 .layout > .header 
   grid-area: header;
