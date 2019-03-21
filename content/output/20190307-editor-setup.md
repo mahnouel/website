@@ -1,26 +1,28 @@
 ---
-title: 👩‍🏭 Visual Studio Code Erweiterungen
-excerpt: Eine kleine Zusammenstellung der von mir genutzten Erweiterungen, zum Teil mit Anmerkungen.
+title: Editor Setup
+excerpt: Eine kleine Zusammenstellung der von mir genutzten Erweiterungen und Anpassungen für Visual Studio Code, zum Teil mit Anmerkungen.
 lang: de
 date: 2019-03-07
 ---
 
-# VSCode Erweiterungen
+# Editor Setup
+
+[Visual Studio Code](https://code.visualstudio.com/) ist seit Langem mein Werkzeug der Wahl, um Anwendungen zu programmieren. Überzeugt hat es mich durch Schnelligkeit und Anpassungsfähigkeit.
 
 ## Oberfläche
 
-![Screenshot von Visual Studio Code](/img/tools/vscode.png "Editor auf blauem Grund")
+![Screenshot von Visual Studio Code](/img/tools/vscode.jpg "Editor auf blauem Grund")
 
 - **Schriftart**: [PragmataPro](https://www.fsd.it/shop/fonts/pragmatapro/)
 
   PragmataPro unterstützt eine Vielzahl an Ligaturen. Beispielsweise:
 
-  ![Screenshot der Ligaturen](/img/tools/font.png)
+  ![Screenshot der Ligaturen](/img/tools/font.jpg)
 
 - **Farbschema**: [IBM Color Scheme](https://marketplace.visualstudio.com/items?itemName=paperfanz.ibm-color-palette-color-scheme)
 - **Icons**: [VSCode-Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
-  ![Screenshot der Icons](/img/tools/icons.png)
+  ![Screenshot der Icons](/img/tools/icons.jpg)
 
 ## Nützliche Erweiterungen
 
