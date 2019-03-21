@@ -17,7 +17,7 @@ module.exports = {
       options: {
         path: "content/output/**/*.md",
         typeName: "Output",
-        route: "/:lang/:year/@/:slug"
+        route: "/:lang/:year/:slug"
       }
     },
     {
