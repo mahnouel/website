@@ -5,7 +5,7 @@
     </main>
     <aside class="aside aside--prefer-above">
       <article>
-        <h2>Direktzugriff</h2>
+        <h2>Schnellzugriff</h2>
         <a
           v-for="jumpmark in $page.about.edges[0].node.jumpmarks"
           :href="jumpmark.href"
