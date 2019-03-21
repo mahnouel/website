@@ -15,7 +15,7 @@
         </p>
       </section>
 
-      <section v-if="$page.learning.edges.length">
+      <!--section v-if="$page.learning.edges.length">
         <h2>TIL</h2>
         <ul>
           <li class="clickable" v-for="learning in $page.learning.edges" v-bind:key="learning.id">
@@ -31,7 +31,7 @@
             {{ learning.node.title }}
           </li>
         </ul>
-      </section>
+      </section-->
     </main>
 
     <aside class="aside">

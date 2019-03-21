@@ -1,13 +1,6 @@
 <template>
   <div class="layout">
-    <header class="header" v-if="!hideHeader">
-      <g-link class="header__title" to="/">{{ $static.metaData.siteName }}</g-link>
-      <!-- <nav class="nav">
-        {{$page}}
-        <g-link class="button" to="/">Startseite</g-link>
-        <g-link class="button" to="/about">About</g-link>
-      </nav>-->
-    </header>
+    <magic-header v-if="!hideHeader" :metaData="$static.metaData"/>
     <slot/>
   </div>
 </template>
@@ -21,7 +14,12 @@ query {
 </static-query>
 
 <script>
+import MagicHeader from "~/components/MagicHeader.vue";
+
 export default {
+  components: {
+    MagicHeader
+  },
   props: ["hideHeader"]
 };
 </script>

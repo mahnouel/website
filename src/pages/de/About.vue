@@ -1,24 +1,9 @@
 <template>
-  <Layout>
+  <TextLayout :jumpmarks="$page.about.edges[0].node.jumpmarks">
     <main class="main">
       <div v-html="$page.about.edges[0].node.content" class="text"></div>
     </main>
-    <aside class="aside aside--prefer-above">
-      <article>
-        <h2>Direktzugriff</h2>
-        <a
-          v-for="jumpmark in $page.about.edges[0].node.jumpmarks"
-          :href="jumpmark.href"
-          v-bind:key="jumpmark.name"
-        >⬇️ {{jumpmark.name}}</a>
-      </article>
-    </aside>
-    <footer class="footer">
-      <p>zur
-        <g-link to="/">Startseite 🏡</g-link>
-      </p>
-    </footer>
-  </Layout>
+  </TextLayout>
 </template>
 
 <page-query>

@@ -1,9 +1,9 @@
 <template>
-  <Layout>
+  <TextLayout>
     <main class="main">
       <article v-html="$page.output.content"></article>
     </main>
-  </Layout>
+  </TextLayout>
 </template>
 
 <page-query>
