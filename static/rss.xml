@@ -1,1 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Manuel K]]></title><description><![CDATA[Manuel K]]></description><link>https://m-k.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 22 Mar 2019 16:56:51 GMT</lastBuildDate><atom:link href="https://m-k.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Editor Setup]]></title><link>https://m-k.io/de/2019/editor-setup</link><guid isPermaLink="true">https://m-k.io/de/2019/editor-setup</guid></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Manuel K]]></title><description><![CDATA[Manuel K]]></description><link>https://m-k.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 22 Mar 2019 17:19:19 GMT</lastBuildDate><atom:link href="https://m-k.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Editor Setup]]></title><link>https://m-k.io/de/2019/editor-setup</link><guid isPermaLink="true">https://m-k.io/de/2019/editor-setup</guid><content:encoded>&lt;h1 id=&quot;editor-setup&quot;&gt;Editor Setup&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; ist seit Langem mein Werkzeug der Wahl, um Anwendungen zu programmieren. Überzeugt hat es mich durch Schnelligkeit und Anpassungsfähigkeit.&lt;/p&gt;
+&lt;h2 id=&quot;oberfläche&quot;&gt;Oberfläche&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;./20190307-editor-setup/vscode.jpg&quot; alt=&quot;Screenshot von Visual Studio Code&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;schriftart&quot;&gt;Schriftart&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.fsd.it/shop/fonts/pragmatapro/&quot;&gt;Pra&amp;shy;gmataPro&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PragmataPro unterstützt eine Vielzahl an Ligaturen. Beispielsweise:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./20190307-editor-setup/font.png&quot; alt=&quot;Screenshot der Ligaturen&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;farbschema&quot;&gt;Farbschema&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=paperfanz.ibm-color-palette-color-scheme&quot;&gt;IBM Color Scheme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;icons&quot;&gt;Icons&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons&quot;&gt;VSCode-Icons&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./20190307-editor-setup/icons.png&quot; alt=&quot;Screenshot der Icons&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;nützliche-erweiterungen&quot;&gt;Nützliche Erweiterungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://tabnine.com/&quot;&gt;TabNine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Durch Machine Learning gestütztes Autocomplete für jede Sprache. Die Ergebnisse können durch das zuschalten der jeweiligen Language Server verbessert werden. Hierfür muss &lt;code&gt;TabNine::sem&lt;/code&gt; getippt werden.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens&quot;&gt;GitLens&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost&quot;&gt;Import Cost&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense&quot;&gt;NPM Intellisense&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;syntax&quot;&gt;Syntax&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=tobermory.es6-string-html&quot;&gt;ES6-String-HTML&lt;/a&gt; färbt den Inhalt von Template Strings vor welchen &lt;code&gt;/*html*/&lt;/code&gt; oder &lt;code&gt;html&lt;/code&gt; steht wie normales HTML ein.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight&quot;&gt;TODO Highlight&lt;/a&gt; hebt &lt;code&gt;TODO&lt;/code&gt; in Kommentaren deutlich hervor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=byi8220.indented-block-highlighting&quot;&gt;Indented Block Highlighting&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;formatierung&quot;&gt;Formatierung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig&quot;&gt;EditorConfig&lt;/a&gt; ermöglicht das festlegen von verschiedenen Editor Einstellungen pro Projekt. Beispielsweise ob Tabs oder Leerzeichen für ein Tab genutzt werden oder wie viele Leerzeichen ein Tab groß ist.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint&quot;&gt;ESLint&lt;/a&gt; überprüft ob JavaScript nach vorher definierten Regeln geschrieben wurde und bietet im Zusammenspiel mit Prettier eine Autokorrektur an.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode&quot;&gt;Prettier&lt;/a&gt; ermöglicht die automatische Formatierung von nahezu allen Dateitypen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Um das Zusammenspiel der verschiedenen Formatierungshilfen zu ermöglichen, wird folgende Konfiguration genutzt:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;  &amp;quot;css.validate&amp;quot;: false,
+  &amp;quot;less.validate&amp;quot;: false,
+  &amp;quot;scss.validate&amp;quot;: false,
+  &amp;quot;eslint.autoFixOnSave&amp;quot;: false,
+  &amp;quot;editor.formatOnPaste&amp;quot;: false,
+  &amp;quot;editor.formatOnSave&amp;quot;: true,
+  &amp;quot;prettier.stylelintIntegration&amp;quot;: true,
+  &amp;quot;prettier.eslintIntegration&amp;quot;: true,&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;anderes&quot;&gt;Anderes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=compulim.vscode-clock&quot;&gt;Clock In Statusbar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=sneezry.vscode-instant-weather&quot;&gt;Instant Weather&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=compulim.vscode-ipaddress&quot;&gt;IP Address&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify&quot;&gt;VSCode-Spotify&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded></item></channel></rss>

@@ -3,6 +3,7 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const marked = require("marked");
 
 module.exports = {
   siteName: "Manuel K",
@@ -25,7 +26,8 @@ module.exports = {
           title: node.title,
           description: node.description,
           url: `https://m-k.io${node.path}`,
-          author: node.fields.author
+          author: node.fields.author,
+          custom_elements: [{ "content:encoded": marked(node.content) }]
         }),
         output: {
           dir: "./static",
