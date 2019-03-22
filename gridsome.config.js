@@ -24,7 +24,7 @@ module.exports = {
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: "https://m-k.io/post/" + node.slug,
+          url: `https://m-k.io${node.path}`,
           author: node.fields.author
         }),
         output: {
