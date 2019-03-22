@@ -13,14 +13,21 @@ date: 2019-03-07
 
 ![Screenshot von Visual Studio Code](./20190307-editor-setup/vscode.jpg)
 
-- **Schriftart**: [PragmataPro](https://www.fsd.it/shop/fonts/pragmatapro/)
+### Schriftart
+
+- [Pra&shy;gmataPro](https://www.fsd.it/shop/fonts/pragmatapro/)
 
   PragmataPro unterstützt eine Vielzahl an Ligaturen. Beispielsweise:
 
   ![Screenshot der Ligaturen](./20190307-editor-setup/font.png)
 
-- **Farbschema**: [IBM Color Scheme](https://marketplace.visualstudio.com/items?itemName=paperfanz.ibm-color-palette-color-scheme)
-- **Icons**: [VSCode-Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+### Farbschema
+
+- [IBM Color Scheme](https://marketplace.visualstudio.com/items?itemName=paperfanz.ibm-color-palette-color-scheme)
+
+### Icons
+
+- [VSCode-Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
   ![Screenshot der Icons](./20190307-editor-setup/icons.png)
 
