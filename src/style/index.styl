@@ -60,6 +60,8 @@ a
   position: relative;
   color: #111111;
   box-decoration-break: clone;
+  hyphens: manual;
+  break-inside: avoid;
 
 a:visited 
   background-color: #eee;
@@ -70,7 +72,7 @@ a:hover
 
 
 a[target='_blank']
-  border-radius: 1em;
+  border-radius: 0;
 
 a[target='_blank']:before 
   content: ' ↗️ ';
