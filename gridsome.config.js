@@ -13,10 +13,31 @@ module.exports = {
   },
   plugins: [
     {
+      use: "gridsome-plugin-rss",
+      options: {
+        contentTypeName: "BlogPost",
+        feedOptions: {
+          title: "Manuel K",
+          feed_url: "https://m-k.io/rss.xml",
+          site_url: "https://m-k.io"
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.description,
+          url: "https://m-k.io/post/" + node.slug,
+          author: node.fields.author
+        }),
+        output: {
+          dir: "./static",
+          name: "rss.xml"
+        }
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/output/**/*.md",
-        typeName: "Output",
+        path: "content/blog/**/*.md",
+        typeName: "BlogPost",
         route: "/:lang/:year/:slug"
       }
     },

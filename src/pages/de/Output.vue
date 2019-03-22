@@ -2,11 +2,11 @@
   <Layout>
     <main class="main">
       <h1>Output Archiv 🕵️‍♀️</h1>
-      <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
-        <h3>{{ output.node.title }}</h3>
-        <small>{{ output.node.date | date }}</small>
-        {{output.node.excerpt}}
-        <g-link :to="output.node.path">Lesen</g-link>
+      <article class="clickable" v-for="blogPost in $page.blogPost.edges" v-bind:key="blogPost.id">
+        <h3>{{ blogPost.node.title }}</h3>
+        <small>{{ blogPost.node.date | date }}</small>
+        {{blogPost.node.excerpt}}
+        <g-link :to="blogPost.node.path">Lesen</g-link>
       </article>
     </main>
   </Layout>
@@ -14,7 +14,7 @@
 
 <page-query>
 query OutputPage {
-  output: allOutput {
+  blogPost: allBlogPost {
     edges {
       node {
         title

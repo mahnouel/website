@@ -1,14 +1,14 @@
 <template>
   <TextLayout>
     <main class="main">
-      <article v-html="$page.output.content"></article>
+      <article v-html="$page.blogPost.content"></article>
     </main>
   </TextLayout>
 </template>
 
 <page-query>
-query Output ($path: String!) {
-  output: output (path: $path) {
+query BlogPost ($path: String!) {
+  blogPost: blogPost (path: $path) {
     title
     content
   }
@@ -19,7 +19,7 @@ query Output ($path: String!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.output.title
+      title: this.$page.blogPost.title
     };
   }
 };

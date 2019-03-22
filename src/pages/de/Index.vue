@@ -2,16 +2,17 @@
   <Layout :hideHeader="true">
     <main class="main">
       <div v-html="$page.intro.edges[0].node.content"></div>
-      <section v-if="$page.output.edges.length">
+      <section v-if="$page.blogPost.edges.length">
         <h2>Blog</h2>
-        <article class="clickable" v-for="output in $page.output.edges" v-bind:key="output.id">
-          <h3>{{ output.node.title }}</h3>
-          <small>{{ output.node.date | date }}</small>
-          {{output.node.excerpt}}
-          <g-link :to="output.node.path">Lesen</g-link>
+        <article class="clickable" v-for="post in $page.blogPost.edges" v-bind:key="post.id">
+          <h3>{{ post.node.title }}</h3>
+          <small>{{ post.node.date | date }}</small>
+          {{post.node.excerpt}}
+          <g-link :to="post.node.path">Lesen</g-link>
         </article>
-        <p v-if="$page.output.edges.length >= 3">Zum
-          <g-link to="/de/output/">Archiv</g-link>
+        <p v-if="$page.blogPost.edges.length >= 3">
+          Zum
+          <g-link to="/de/blog/">Archiv</g-link>
         </p>
       </section>
 
@@ -73,7 +74,8 @@ query Homepage {
       }
     }
   }
-  output: allOutput(perPage: 3) {
+
+  blogPost: allBlogPost(perPage: 3) {
     edges {
       node {
         title
