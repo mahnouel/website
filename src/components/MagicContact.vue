@@ -1,20 +1,7 @@
 <template>
-  <div class="contact clickable">
-    ℹ️ Schreiben Sie mir via
-    <a href="mailto://hello@m-k.io">hello@m-k.io</a>
-  </div>
+  <p>
+    Sie erreichen mich via
+    <a href="mailto://hello@m-k.io">hello@m-k.io</a>.
+  </p>
 </template>
 
-<script>
-export default {};
-</script>
-
-<style lang="stylus">
-.contact {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #eee;
-  border-radius: 0.25rem;
-  text-align: center;
-}
-</style>
