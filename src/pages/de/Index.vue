@@ -2,6 +2,7 @@
   <Layout :hideHeader="true">
     <main class="main">
       <div v-html="$page.intro.edges[0].node.content"></div>
+      <magic-contact/>
       <section v-if="$page.blogPost.edges.length">
         <h2>Blog</h2>
         <article class="clickable" v-for="post in $page.blogPost.edges" v-bind:key="post.id">
@@ -10,12 +11,10 @@
           {{post.node.excerpt}}
           <g-link :to="post.node.path">Lesen</g-link>
         </article>
-        <p v-if="$page.blogPost.edges.length >= 3">
-          Zum
+        <p v-if="$page.blogPost.edges.length >= 3">Zum
           <g-link to="/de/blog/">Archiv</g-link>
         </p>
       </section>
-
       <!--section v-if="$page.learning.edges.length">
         <h2>TIL</h2>
         <ul>
@@ -101,8 +100,12 @@ query Homepage {
 
 <script>
 import moment from "moment";
+import MagicContact from "~/components/MagicContact.vue";
 
 export default {
+  components: {
+    MagicContact
+  },
   metaInfo: {
     title: "Entwickler"
   },

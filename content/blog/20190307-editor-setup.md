@@ -15,9 +15,7 @@ date: 2019-03-07
 
 ### Schriftart
 
-- [Pra&shy;gmataPro](https://www.fsd.it/shop/fonts/pragmatapro/)
-
-  PragmataPro unterstützt eine Vielzahl an Ligaturen. Beispielsweise:
+- [Pra&shy;gmataPro](https://www.fsd.it/shop/fonts/pragmatapro/) unterstützt eine Vielzahl an Ligaturen. Beispielsweise:
 
   ![Screenshot der Ligaturen](./20190307-editor-setup/font.png)
 
@@ -33,9 +31,7 @@ date: 2019-03-07
 
 ## Nützliche Erweiterungen
 
-- [TabNine](https://tabnine.com/)
-
-  Durch Machine Learning gestütztes Autocomplete für jede Sprache. Die Ergebnisse können durch das zuschalten der jeweiligen Language Server verbessert werden. Hierfür muss `TabNine::sem` getippt werden.
+- [TabNine](https://tabnine.com/) - Durch Machine Learning gestütztes Autocomplete für jede Sprache. Die Ergebnisse können durch das zuschalten der jeweiligen Language Server verbessert werden. Hierfür muss `TabNine::sem` getippt werden.
 
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)

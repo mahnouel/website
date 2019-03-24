@@ -25,6 +25,3 @@ export default {
 </script>
 
 
-<style lang="stylus">
-@import '../style/index.styl';
-</style>

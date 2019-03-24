@@ -1,0 +1,26 @@
+
+a 
+  text-decoration: none;
+  background-color: #dde;
+  padding: 0 0.25em;
+  border-radius: .25em;
+  position: relative;
+  color: #111111;
+  box-decoration-break: clone;
+  hyphens: manual;
+  break-inside: avoid;
+
+a:visited 
+  background-color: #eee;
+
+a:hover 
+  opacity: 0.6;
+
+a[target='_blank']
+  border-radius: 0;
+
+a[target='_blank']::before 
+  content: ' ↗️ ';
+  line-height: 1;
+  vertical-align: middle;
+  font-weight: bold;

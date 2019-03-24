@@ -1,0 +1,15 @@
+
+.clickable
+  position: relative;
+  &:hover h3
+    opacity: .6;
+  a
+    position:static;
+    &::after
+      content:' '
+      display:block;
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
