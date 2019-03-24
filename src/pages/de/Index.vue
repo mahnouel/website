@@ -7,7 +7,7 @@
         <h2>Blog</h2>
         <article class="clickable" v-for="post in $page.blogPost.edges" v-bind:key="post.id">
           <h3>{{ post.node.title }}</h3>
-          <small>{{ post.node.date | date }}</small>
+          <!-- <small>{{ post.node.date | date }}</small> -->
           {{post.node.excerpt}}
           <g-link :to="post.node.path">Lesen</g-link>
         </article>
