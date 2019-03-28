@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: mahnouel/website
+  branch: netlify-cms
+
+media_folder: "static/media"
+public_folder: "/media"
+
+collections:
+  - name: "blog"
+    label: "Blog Post"
+    folder: "content/blog"
+    preview_path: "de/{{year}}/{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - {
+          label: "Lang",
+          name: "lang",
+          widget: "select",
+          options:
+            [
+              { label: "German", value: "de" },
+              { label: "English", value: "en" },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "information"
+    label: "Information"
+    folder: "content/information"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Type",
+          name: "type",
+          widget: "select",
+          options:
+            [
+              { label: "About", value: "about" },
+              { label: "Intro", value: "intro" },
+              { label: "Aside", value: "aside" },
+            ],
+        }
+      - {
+          label: "Lang",
+          name: "lang",
+          widget: "select",
+          options:
+            [
+              { label: "German", value: "de" },
+              { label: "English", value: "en" },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+#
