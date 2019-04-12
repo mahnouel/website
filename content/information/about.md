@@ -57,8 +57,10 @@ Programmieren macht mir Spaß: Es geht darum Lösungen zu finden. Herausfordernd
 - Linux
 - Docker
 - Docker Swarm
-- ITCSS
 - JAM Stack
+- ITCSS
+- BEM
+- Atomic Design
 - uvm.
 
 </section>
