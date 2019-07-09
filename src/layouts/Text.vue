@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
-    <magic-header v-if="!hideHeader" :metaData="$static.metaData"/>
-    <slot/>
+    <magic-header v-if="!hideHeader" :metaData="$static.metaData" />
+    <slot />
     <aside class="aside aside--prefer-above">
       <article v-if="jumpmarks">
         <h2>Schnellzugriff</h2>
@@ -12,7 +12,7 @@
         >⬇️ {{jumpmark.name}}</a>
       </article>
     </aside>
-    <magic-footer/>
+    <magic-footer />
   </div>
 </template>
 
@@ -32,6 +32,19 @@ export default {
   components: {
     MagicHeader,
     MagicFooter
+  },
+  mounted() {
+    (() => {
+      const script = document.createElement("script");
+      script.setAttribute("src", "https://ping.m-k.io/app.js");
+      document.body.appendChild(script);
+
+      const noscript = document.createElement("noscript");
+      const img = document.createElement("img");
+      img.setAttribute("src", "https://ping.m-k.io/image.gif");
+      noscript.appendChild(img);
+      document.body.appendChild(noscript);
+    })();
   },
   props: ["hideHeader", "jumpmarks"]
 };
