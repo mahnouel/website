@@ -37,6 +37,8 @@ export default {
     (() => {
       const script = document.createElement("script");
       script.setAttribute("src", "https://ping.m-k.io/app.js");
+      script.setAttribute("async", true);
+      script.setAttribute("defer", true);
       document.body.appendChild(script);
 
       const noscript = document.createElement("noscript");
