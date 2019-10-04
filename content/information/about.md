@@ -13,7 +13,7 @@ Ursprünglich komme ich aus Oberfranken. Seitdem ich bin, begeistert mich die Vi
 
 Mittlerweile lebe ich in Berlin. Dank dem Internet gibt es hier leckeres Mittagessen und die neue Pfefferminz Zahnpasta in einer Stunde geliefert. 
 
-Für alle Ebenen der Softwareentwicklung grundsätzlich begeistert, spricht mich momentan vor allem die Webentwicklung an. Interesse habe ich vor allem an den Konzepten und deren Überschneidungen in den einzelnen Sprachen und Frameworks.
+Für alle Ebenen der Softwareentwicklung grundsätzlich begeistert, spricht mich momentan vor allem die Webentwicklung an. Interesse habe ich an den Konzepten und deren Überschneidungen in den einzelnen Sprachen und Frameworks.
 
 Programmieren macht mir Spaß: Es geht darum Lösungen zu finden. Herausfordernde Probleme, in immer Kleinere herunterzubrechen und so Verständnis für sie zu entwickeln. Dennoch bin ich weniger Mathematiker, sondern habe vor allem Spaß wenn ich kreativ sein und um die Ecke denken muss.
 
