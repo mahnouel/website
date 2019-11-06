@@ -37,6 +37,11 @@ export default {
       linkPingback.setAttribute("rel", "pingback");
       linkPingback.setAttribute("href", "https://webmention.io/m-k.io_de_/xmlrpc");
       document.head.appendChild(linkPingback);
+      
+      const linkEndpoint = document.createElement("link");
+      linkEndpoint.setAttribute("rel", "authorization_endpoint");
+      linkEndpoint.setAttribute("href", "https://indieauth.com/auth");
+      document.head.appendChild(linkEndpoint);
 
       const noscript = document.createElement("noscript");
       const img = document.createElement("img");
