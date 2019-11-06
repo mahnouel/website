@@ -42,6 +42,11 @@ export default {
       linkEndpoint.setAttribute("rel", "authorization_endpoint");
       linkEndpoint.setAttribute("href", "https://indieauth.com/auth");
       document.head.appendChild(linkEndpoint);
+     
+      const linkTokenEndpoint = document.createElement("link");
+      linkTokenEndpoint.setAttribute("rel", "token_endpoint");
+      linkTokenEndpoint.setAttribute("href", "https://tokens.indieauth.com/token");
+      document.head.appendChild(linkTokenEndpoint);
 
       const noscript = document.createElement("noscript");
       const img = document.createElement("img");
