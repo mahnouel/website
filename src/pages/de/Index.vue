@@ -2,7 +2,7 @@
   <Layout :hideHeader="true">
     <main class="main">
       <div v-html="$page.intro.edges[0].node.content"></div>
-      <magic-contact/>
+      <magic-contact />
       <section v-if="$page.blogPost.edges.length">
         <h2>Blog</h2>
         <article class="clickable" v-for="post in $page.blogPost.edges" v-bind:key="post.id">
@@ -20,6 +20,11 @@
 
     <aside class="aside">
       <article v-for="aside in $page.aside.edges" v-bind:key="aside.id" v-html="aside.node.content"></article>
+      <div class="h-card" style="display:none">
+        <a class="p-name u-url" href="https://m-k.io">Manuel K</a>
+        <span class="p-locality">Berlin</span>
+        <span class="p-country-name">Germany</span>
+      </div>
     </aside>
   </Layout>
 </template>
